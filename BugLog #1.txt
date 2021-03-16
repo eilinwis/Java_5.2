@@ -1,0 +1,38 @@
+[INFO] 
+[INFO] --------------------< ru.netology:bonus-calculator >--------------------
+[INFO] Building bonus-calculator 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ bonus-calculator ---
+[INFO] Deleting C:\Users\Roman\Downloads\Тестирование\Java\bonus-service\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bonus-calculator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ bonus-calculator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\Users\Roman\Downloads\Тестирование\Java\bonus-service\target\classes
+[INFO] 
+[INFO] >>> spotbugs-maven-plugin:3.1.12.2:check (default-cli) > :spotbugs @ bonus-calculator >>>
+[INFO] 
+[INFO] --- spotbugs-maven-plugin:3.1.12.2:spotbugs (spotbugs) @ bonus-calculator ---
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.ReflectionUtils (file:/C:/Users/Roman/.m2/repository/org/codehaus/groovy/groovy/3.0.0-beta-2/groovy-3.0.0-beta-2-indy.jar) to method java.util.Collections$UnmodifiableCollection.toString()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.ReflectionUtils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Fork Value is true
+     [java] Warnings generated: 1
+[INFO] Done SpotBugs Analysis....
+[INFO] 
+[INFO] <<< spotbugs-maven-plugin:3.1.12.2:check (default-cli) < :spotbugs @ bonus-calculator <<<
+[INFO] 
+[INFO] 
+[INFO] --- spotbugs-maven-plugin:3.1.12.2:check (default-cli) @ bonus-calculator ---
+[INFO] BugInstance size is 1
+[INFO] Error size is 0
+[INFO] Total bugs: 1
+[ERROR] Return value of BonusService.calculate(long, boolean) ignored, but method has no side effect [Main] At Main.java:[line 8] RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT
+[INFO] 
+To see bug detail using the Spotbugs GUI, use the following command "mvn spotbugs:gui"
